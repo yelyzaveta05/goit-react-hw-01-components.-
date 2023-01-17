@@ -16,12 +16,12 @@ export const Statistics = ({title, stats}) => {
     );
 }
 
-Statistics.prototype = {
+Statistics.prototypes = {
     title: PropTypes.string,
-    stats: PropTypes.arrayOf(PropTypes.exact({
-        id: PropTypes.string.isRequired,
-        label: PropTypes.string.isRequired,
-        percentage: PropTypes.number.isRequired
-    }).isRequired,
-    ).isRequired,
+    stats: PropTypes.arrayOf(
+        PropTypes.exact({
+            id: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
+            percentage: PropTypes.number.isRequired
+    })).isRequired
 }
