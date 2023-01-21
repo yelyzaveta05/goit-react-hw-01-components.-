@@ -11,7 +11,7 @@ export const FriendList = ({ friends }) => {
     )
 }
 
-FriendList.prototypes = {
+FriendList.propTypes = {
     friends: PropTypes.arrayOf(PropTypes.shape({
         avatar: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
